@@ -176,6 +176,8 @@ public class JobPostActivityController {
                                @RequestParam(value = "days7", required = false) boolean days7,
                                @RequestParam(value = "days30", required = false) boolean days30) {
 
+        System.out.println("Performing Global Search");
+
         model.addAttribute("partTime", Objects.equals(partTime, "Part-Time"));
         model.addAttribute("fullTime", Objects.equals(partTime, "Full-Time"));
         model.addAttribute("freelance", Objects.equals(partTime, "Freelance"));
